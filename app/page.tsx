@@ -29,8 +29,8 @@ export default function Home() {
   useEffect(() => {
     const animate = () => {
       setCirclePosition((prevPosition) => {
-        const dx = (mousePosition.x - prevPosition.x) * 0.2; // Slightly faster movement
-        const dy = (mousePosition.y - prevPosition.y) * 0.2; // Slightly faster movement
+        const dx = (mousePosition.x - prevPosition.x) * 0.2; 
+        const dy = (mousePosition.y - prevPosition.y) * 0.2; 
 
         return {
           x: prevPosition.x + dx,
@@ -38,16 +38,15 @@ export default function Home() {
         };
       });
 
-      requestAnimationFrame(animate); // Continues the animation
+      requestAnimationFrame(animate); 
     };
 
-    requestAnimationFrame(animate); // Starts the animation loop
+    requestAnimationFrame(animate); 
 
   }, [mousePosition]);
 
   return (
     <div className="relative">
-      {/* Mouse-following blur circle */}
       <div
         className="pointer-events-none fixed h-16 w-16 rounded-full bg-violet-500 blur-lg opacity-50"
         style={{
@@ -56,7 +55,6 @@ export default function Home() {
         }}
       ></div>
 
-      {/* Components */}
       <Header />
       <Hero />
       <BrandSlide />
