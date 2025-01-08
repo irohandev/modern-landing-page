@@ -21,7 +21,7 @@ const ProductCard = () => {
       </div>
 
       <div className="flex flex-col gap-16 pt-4 lg:flex-row justify-center items-center px-8">
-        <div className="shadow-2xl rounded-xl flex justify-center items-center flex-col p-8 max-w-[400px]">
+        <div className="shadow-2xl rounded-xl flex justify-center items-center flex-col p-8 max-w-[400px] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(148,0,211,0.7)]">
           <Image src={Helix} alt="Helix" className="pb-4" />
           <div className="text-2xl font-bold pb-3 text-center">
             Integration ecosystem
@@ -32,7 +32,7 @@ const ProductCard = () => {
           </div>
         </div>
 
-        <div className="shadow-2xl rounded-xl flex justify-center items-center flex-col p-8 max-w-[400px]">
+        <div className="shadow-2xl rounded-xl flex justify-center items-center flex-col p-8 max-w-[400px] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(148,0,211,0.7)]">
           <Image src={Cube} alt="Cube" className="pb-4" />
           <div className="text-2xl font-bold pb-3 text-center">
             Goal setting and tracking
